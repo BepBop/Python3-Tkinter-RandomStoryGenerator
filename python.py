@@ -41,16 +41,16 @@ def myClick():
            }
            
 
- if k==2:
+ if k==2 and len(e2.get())!=0:
     myLabel4=Label(root,text="Once upon a time, " + random.choice(Setup) + " and " + e1.get() + Noun2[k2] + "magically summoned to the resuce!")
     myLabel4.pack()
  
- if k==1:
+ if k==1 and len(e2.get())!=0:
     myLabel4=Label(root,text=e1.get()+" "+Noun[k]+" " +Noun2[k2]+ "Suddenly, all went awry when they were summoned to the magical kingdom!")
     myLabel4.pack()
  
  if len(e2.get())==0:
-    myLabel4=Label(root,text=e1.get()+" "+Noun[k]+" " +Noun3[k2]+ ".All was changed forever when they won a lottery worth crores")
+    myLabel4=Label(root,text=e1.get()+" "+Noun[k]+Noun2[k2]+Noun3[k2]+ ". All was changed forever when they won a lottery worth crores!")
     myLabel4.pack()
 
  if k>0:
@@ -59,7 +59,7 @@ def myClick():
 
  #monologue
  
- if k>0:
+ if k>0 and len(e2.get())!=0:
 
     MonologueIntro=["Upon reaching the kingdom, ","Upon reaching the kingdom's court, ","Upon being summoned to the kingdom, ","Upong being summoned in the middle of dark winter night to the kingdom, ", "Upon being summoned to the kingdom's church ", "It was warm sunny morning when our hero appeared ","Warm sun shinning on the vast green grassland when our hero touched the soil of magic kingdom the first time"]
     
@@ -69,7 +69,7 @@ def myClick():
     
     MonologueFight=["went into the deep redwood forest","Our hero went deep to save the day","Charged the battle that was knocking at the kingdom's door","Our now hero listening to the problem found the courage and charged the battle!","Our hero went out to the battle on the Great Mount Volca","Our common man now hero lead the kingdom army to the warfield of King Doom","air was warm and night dark but hero feared none and charged the Dargon Mount"]
     
-    MonologueEnd=["Hero passing through dense kingdom forest to the battlefield was suddenly attacked","Suddenly the hero was attcked by magic casters with fireballs","The oracks surrounded our hero","The dragon flew over our hero","Enemies hidden in thick forest surrounded our hero passing by to the battlefield","enemies arhers shot some arrows at our hero","Our hero party shot their warning shot at the dragon lair"]
+    MonologueEnd=["Hero passing through dense kingdom forest to the battlefield was suddenly attacked","Suddenly the hero was attacked by magic casters with fireballs","The oracks surrounded our hero","The dragon flew over our hero","Enemies hidden in thick forest surrounded our hero passing by to the battlefield","enemies arhers shot some arrows at our hero","Our hero party shot their warning shot at the dragon lair"]
    
     MonologueEnd1=["Our hero fougt bravely and was victorious","Our hero at the end saved this kingdom","Our hero fought the war and kindom was saved", "Everyone was happy when out hero returned from the conquest victorious!"]
     myLabel5=Label(root,text=random.choice(MonologueIntro)+" "+random.choice(MonologueResponsible))
