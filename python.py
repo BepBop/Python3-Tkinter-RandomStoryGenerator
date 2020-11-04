@@ -46,7 +46,7 @@ def myClick():
     myLabel4.pack()
  
  if k==1 and len(e2.get())!=0:
-    myLabel4=Label(root,text=e1.get()+" "+Noun[k]+" " +Noun2[k2]+ "Suddenly, all went awry when they were summoned to the magical kingdom!")
+    myLabel4=Label(root,text=e1.get()+" "+Noun[k]+Noun2[k2]+ "Suddenly, all went awry when they were summoned to the magical kingdom!")
     myLabel4.pack()
  
  if len(e2.get())==0:
